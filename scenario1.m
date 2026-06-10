@@ -81,7 +81,6 @@ for iter=1:100
     eta2=zeros(100,1);
     count=1;
     
-    tic
     while(1)
     
         for i=1:I
@@ -294,7 +293,6 @@ for iter=1:100
             end
         end
     end
-    toc
 
     if strcmp(cvx_status,'Infeasible')~=0 || count>=100
         cvx_status
